@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./src/images/favicon.png" />
+  <meta charset="utf-8">
+  <title>William Otalora</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+	<link rel="stylesheet" type="text/css" href="./styles/tablet.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" type="text/css" href="./styles/phone.css" media="screen and (max-width: 600px)">
+  <script type="text/javascript" src="./js/menu.js"></script>
+
+</head>
+
+<body>
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center nav-sidebar">
+    <ul class="container-menu">
+
+      <!-- logo -->
+      <li>
+        <picture>
+          <img src="./src/images/logoWA.png" class="my-logo" alt="My logo William">
+        </picture>
+      </li>
+
+      <!-- menu options -->
+      <li>
+        <ul class="tab" id="myDIV">
+          <li>
+            <a class="tablinks active w3-bar-item w3-button w3-padding-large w3-hover-black "
+              onclick="openMenu(event, 'Home')" id="defaultOpen">
+              <i class="fa fa-house w3-xxlarge"></i>
+            </a>
+          </li>
+          <li>
+            <a class="tablinks w3-bar-item w3-button w3-padding-large w3-hover-black"
+              onclick="openMenu(event, 'About')" >
+              <i class="fa fa-user w3-xxlarge"></i>
+            </a>
+          </li>
+          <li>
+            <a class="tablinks w3-bar-item w3-button w3-padding-large w3-hover-black"
+              onclick="openMenu(event, 'Projects')">
+              <i class="fa fa-briefcase w3-xxlarge"></i>
+            </a>
+          </li>
+          <li>
+            <a class="tablinks w3-bar-item w3-button w3-padding-large w3-hover-black "
+              onclick="openMenu(event, 'Contact')">
+              <i class="fa fa-envelope w3-xxlarge"></i>
+              <div class="hide">Contact</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- download my cv -->
+      <li>
+        <section class="dropup">
+          <a class="tablinks w3-bar-item w3-button w3-padding-large w3-hover-black dropbtn">
+            <i class="fa fa-download w3-xxlarge"></i>
+          </a>
+          <div class="dropup-content">
+            <a href="./src/images/cv_spanish.jpg" class="w3-padding w3-hover-black" target="_blank" download>ES</a>
+            <a href="./src/images/cv_english.jpg" class="w3-padding w3-hover-black" target="_blank" download>EN</a>
+          </div>
+        </section>
+      </li>
+    </ul>
+    
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small minimenu">
+      <a onclick="openMenu(event, 'Home')" href="#home" class="w3-bar-item w3-button tablinks item-minimenu">HOME</a>
+      <a onclick="openMenu(event, 'About')" href="#about" class="w3-bar-item w3-button tablinks item-minimenu">ABOUT</a>
+      <a onclick="openMenu(event, 'Projects')" href="#projects" class="w3-bar-item w3-button tablinks item-minimenu">PROJECTS</a>
+      <a onclick="openMenu(event, 'Contact')" href="#contact" class="w3-bar-item w3-button tablinks item-minimenu">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <main class="main-content">
+
+    <!-- Row Content-->
+    <div class="row">
+
+      <!-- Column Image -->
+      <aside class="col-sm-4" >
+        <picture class="container-image" >
+          <div style="position: relative;">
+            <div class="gradient-image"></div>
+            <img src="./src/images/my_vertical_photo.jpg" alt="My main image web" class="w3-image main-image">
+            <div class="center-image w3-center">
+              <h1>William O</h1>
+              <h4 class="colored-text"><strong>Designer / Developer</strong></h4>
+              <a href="https://facebook.com/people/William-Otalora/100011545565166/" target="_blank" class=" icons-image">
+                <i class="fa-brands fa-facebook w3-xlarge"></i></a>
+              <a href="https://github.com/WilliamA-Software/" target="_blank" class="icons-image">
+                <i class="fa-brands fa-github w3-xlarge"></i></a>
+              <a href="https://www.linkedin.com/in/williamotalora/" target="_blank" class="icons-image">
+                <i class="fa-brands fa-linkedin w3-xlarge"></i></a>
+            </div>
+        </picture>
+      </aside>
+    
+      <!-- Column Content -->
+      <section class="col-sm-8 column-content" >
+
+        <!-- Home Section -->
+        <article id="Home" class="tabcontent">
+          <div class="w3-content w3-text-grey context" id="home" >
+            <h1 class="w3-text-light-grey w3-center">Hey! I'm William</b></h1>
+            
+            <section class="images-container">
+              <picture>
+                <img src="./src/images/myphoto.jpg" class="my-circle-image" alt="My personal photo profile">
+              </picture>
+            </section>
+            <br>
+            
+            <p class="colored-text"><i>Android / Web / Mobile / Design / Programming</i></p>
+            <p class="principal-text">I am a software engineer with knowledge in design and development. 
+              I studied software development and emphasis on mobile applications. 
+              I consider myself a person with the ability to work in a team, sense of responsibility, committed, respectful, tolerant, organized, willing 
+              to learn and good management of labor relations.</p>
+            <h3 class="w3-padding-16 w3-text-light-grey">Interests</h3>
+
+            <!-- Interests --> 
+            <section class="w3-card w3-round w3-border interests">
+              <div class="w3-container w3-padding">
+                  <span class="w3-tag w3-small  item-interesting">TI</span>
+                  <span class="w3-tag w3-small item-interesting">Apps</span>
+                  <span class="w3-tag w3-small item-interesting">Web</span>
+                  <span class="w3-tag w3-small item-interesting">Games</span>
+                  <span class="w3-tag w3-small item-interesting">Job</span>
+                  <span class="w3-tag w3-small item-interesting">UX/UI</span>
+                  <span class="w3-tag w3-small item-interesting">Design</span>
+                  <span class="w3-tag w3-small item-interesting">Development</span>
+                  <span class="w3-tag w3-small item-interesting">Front-end</span>
+                  <span class="w3-tag w3-small item-interesting">HTML</span>
+                  <span class="w3-tag w3-small item-interesting">CSS</span>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- About Section -->
+        <article id="About" class="tabcontent without-display">
+          <div class="w3-content w3-justify w3-text-grey context" id="about">
+            <h2 class="w3-text-light-grey"><b>About me</b></h2>
+            <hr class="underline">
+            <p class="principal-text">I am a Software Engineer with skills in design and development. 
+              I love working on the front-end on websites and mobile apps. 
+              I like to be constantly learning.</p>
+            
+            <div class="container-content-row">
+              <div class="row" >
+                <div class="col-sm-7" >
+                  <h3 class=" w3-text-light-grey"><i class="fa fa-graduation-cap w3-large colored-text icon-subtitle-about"></i>Education</h3>
+                  <ul >
+                    <li>Technician in systems and graphic design</li>
+                    <li>Graduate in software engineering</li>
+                    <li>Graduate in software development</li>
+                    <li>Graduate in mobile applications android</li>
+                  </ul> 
+                </div>
+
+                <div class="col-sm-5">
+                  <h3 class="w3-padding-8 w3-text-light-grey"><i class="fa fa-cogs w3-large colored-text icon-subtitle-about"></i>Work Experience</h3>
+                  <ul>
+                    <li>Android mobile developer</li>
+                  </ul>
+                </div> 
+              </div>
+
+              <div class="row">
+                <div class="col-sm-7">
+                  <h3 class="w3-padding-8 w3-text-light-grey"><i class="fa fa-book w3-large colored-text icon-subtitle-about"></i>Professional Skills</h3>
+                  <ul>
+                    <li>Design: Adobe XD - Photoshop - Figma</li>
+                    <li>Mobile dev: Android Java & Kotlin - Flutter</li>
+                    <li>Web dev: HTML - CSS - Javascript - Vue</li>
+                    <li>Agile methodologies: Scrum</li>
+                  </ul>                  
+                </div>
+                <div class="col-sm-5">
+                  <h3 class="w3-padding-8 w3-text-light-grey"><i class="fa fa-rocket w3-large colored-text icon-subtitle-about"></i>Soft Skills</h3>
+                  <ul>
+                    <li>Teamwork</li>
+                    <li>Good communication</li>
+                    <li>Fast learning</li>
+                    <li>Organization</li>
+                    <li>Responsible</li>
+                  </ul>              
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-7">
+                  <h3 class="w3-padding-8 w3-text-light-grey"><i class="fa fa-globe w3-large colored-text icon-subtitle-about"></i>Languages</h3>
+                  <table>
+                    <tr>
+                      <td><ul><li><span>Spanish native</span></li></ul></td>
+                      <td><ul>
+                        <span class="fa fa-star checked margin-icons1"></span>
+                        <span class="fa fa-star checked margin-icons1"></span>
+                        <span class="fa fa-star checked margin-icons1"></span>
+                        <span class="fa fa-star checked margin-icons1"></span>
+                        <span class="fa fa-star checked margin-icons1"></span>
+                      </ul></td>
+                    </tr>
+                    <tr>
+                      <td><ul><li><span>English</span></td>
+                      <td><ul>
+                        <span class="fa fa-star checked margin-icons1"></span>
+                        <span class="fa fa-star checked margin-icons1"></span>
+                        <span class="fa fa-star-o margin-icons1"></span>
+                        <span class="fa fa-star-o margin-icons1"></span>
+                        <span class="fa fa-star-o margin-icons1"></span>
+                      </ul></td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="col-sm-5">
+                  <h3 class="w3-padding-8 w3-text-light-grey"><i class="fa fa-puzzle-piece w3-large colored-text icon-subtitle-about"></i>Hobbies</h3>
+                  <table style="width:100%">
+                    <tr>
+                      <td>
+                        <i class="fa-brands fa-android margin-icons" ></i>
+                        <i class="fa fa-plane margin-icons" ></i>
+                        <i class="fa fa-code margin-icons" ></i>
+                        <i class="fa fa-music margin-icons" ></i>
+                        <i class="fa fa-motorcycle margin-icons" ></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <i class="fa fa-cutlery margin-icons" ></i>
+                        <i class="fa fa-film margin-icons" ></i>
+                        <i class="fa fa-gamepad margin-icons" ></i>
+                        <i class="fa fa-soccer-ball-o margin-icons" ></i>
+                        <i class="fa fa-tv margin-icons"></i>
+                      </td>
+                    </tr>
+                  </table>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projects Section -->
+        <article id="Projects" class="tabcontent without-display">
+          <div class="w3-content w3-justify w3-text-grey context" id="projects">
+            <h2 class="w3-text-light-grey"><b>Projects</b></h2>
+            <hr class="underline">
+            <p class="principal-text">These are some of the projects I have worked on.</p>
+
+            <!-- Photo grid -->
+            <section class="w3-row w3-grayscale-min">
+              <div class="w3-third">
+                <div class="container-grid-images">
+                  <picture>
+                    <img class="image-grid" src="./src/images/gtaxi.jpg" onclick="onClick(this)" alt="Project: GTAXI">
+                  </picture>
+                  <div class="overlay-top-image">
+                    <span class="text-image">GTAXI</span>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="w3-third">
+                <div class="container-grid-images">
+                  <picture>
+                    <img class="image-grid" src="./src/images/admindashboard.jpg" onclick="onClick(this)" alt="Project: Admin dashboard">
+                  </picture>
+                  <div class="overlay-image">
+                    <span class="text-image">Admin dashboard</span>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="w3-third">
+                <div class="container-grid-images">
+                  <picture>
+                    <img class="image-grid" src="./src/images/socailappdesign.jpg" onclick="onClick(this)" alt="Design: Social APP">
+                  </picture>
+                  <div class="overlay-top-image">
+                    <span class="text-image">Social app design</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- Contact Section -->
+        <article id="Contact" class="tabcontent without-display">
+          <div class="w3-content w3-justify w3-text-grey context" id="contact">
+            <h2 class="w3-text-light-grey"><b>Contact Me</b></h2>
+            <hr class= "underline">
+            <p class="principal-text">I want help you design a product 
+              or a new idea to transform the process.
+            </p>
+            <section class="w3-section">
+              <p><i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right colored-text"></i>Ubication: Neiva, Colombia</p>
+              <p><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right colored-text" ></i>Email: andresotamarano12@gmail.com</p>
+              <p><i class="fa-brands fa-linkedin-in fa-fw w3-xlarge w3-margin-right colored-text"></i>www.linkedin.com/in/williamotalora</p>
+            </section>
+            <br>
+            <p>Let's get in touch. Send me a message:</p>
+            <form id="form" action="/action_page.php" target="_blank">
+              <p><input class="w3-input w3-border w3-round w3-padding-8" type="text" placeholder="Name" maxlength="40" required name="Name"></p>
+              <p><input class="w3-input w3-border w3-round w3-padding-8" type="email" placeholder="Email" maxlength="40" required name="Email"></p>
+              <p><input class="w3-input w3-border w3-round w3-padding-8" type="text" placeholder="Subject" maxlength="40" required name="Subject" maxlength="50"></p>
+              <p><textarea class="w3-input w3-border w3-round w3-padding-8 form_input_message" type="text" maxlength="80" placeholder="Message" required name="Message"></textarea></p>
+              <p>
+                <button class="w3-button w3-light-grey w3-round w3-padding-8" type="submit">
+                  <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+              </p>
+            </form>
+            <a href="" id="open_email">mail</a>
+          </div>
+        </article>
+      </section>
+    </div>
+    <!-- END PAGE CONTENT -->
+  </main>
+
+  <footer class="footer-only-phone">
+    <div class="dropup drop-download-cv">
+      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><i class="fa fa-download w3-xlarge icon-button-footer"></i>Download CV
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="./src/images/cv_english.jpg" target="_blank" download>English</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="./src/images/cv_spanish.jpg" target="_blank" download>Spanish</a></li>
+      </ul>
+    </div>
+    <p class="text-footer">Hey! Now you can save my CV in your phone and check it later</p>
+  </footer>
+  <script type="text/javascript" src="./js/sendmail.js"></script>
+</body>
+</html>

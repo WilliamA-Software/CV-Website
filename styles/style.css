@@ -1,0 +1,292 @@
+:root{
+    --bgcolor-page: #111;
+    --bgcolor-menu: #222;
+    --primary-color: #cecece;
+    --secondary-color: #55C189;
+    --principal-font-size: 1.7rem;
+  }
+
+  /* GENERAL STYLES */
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html{
+    font-size: 62.5%;
+  }
+
+  body {
+    background-color: var(--bgcolor-page);
+    height: 100%;
+  }
+  
+  body, h1, h2, h3{
+    font-family: "Montserrat", Verdana, sans-serif;
+  } 
+
+  /* LATERAL MENU STYLES */
+
+  /* Sidebar */
+  .nav-sidebar {
+    width: 90px;
+    background: var(--bgcolor-menu);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .my-logo{
+    width: 100%;
+    padding: 8px;
+  }
+
+  /* icon menu */
+  .tablinks i{
+    text-decoration: none;
+    padding: 8px 0;
+    color: white;
+  }
+
+  /* Style the active class - menu*/
+  .active{
+    background-color:var(--secondary-color);
+  }
+
+  /* Dropup for download CV */
+  .dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #dbdbdb;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    bottom: 75px;
+    z-index: 1;
+  }
+
+  .dropup-content a {
+    color: black;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropup:hover .dropup-content {display: block;}
+
+  .dropup:hover .dropbtn {background-color: var(--bgcolor-menu);}
+
+  /* MAIN IMAGE STYLES */
+  /* principal image full */
+  .main-image{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .gradient-image{
+    background: linear-gradient(#11111100,#111111FF 80%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  /* content image */
+  .center-image{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: white;
+  }
+
+  /* Icons on the image */
+  .icons-image{
+    margin-inline: 5px;
+  }
+
+  /* Icons on the image */
+  .icons-image:hover{
+    color: var(--secondary-color);
+  }
+
+  /* CONTENT STYLES */
+  /* Left margin to the page content that matches the width of the sidebar (90px) */
+  .main-content {
+    margin-left: 90px;
+  }
+
+  .context{
+    padding-bottom: 20px;
+  }
+
+  /* Column right content */
+  .column-content{
+    height: 100vh;
+  }
+
+  /* Style the tab content - All sections (home, about me, projects and contact me)*/
+  .tabcontent {
+    float: left;
+    padding: 32px;
+    width: 100%;
+    border-left: none;
+    height: 100%;
+  }
+
+  /* Hide inactive section */
+  .without-display{
+    display: none;
+  }
+
+  /* Line in Title */
+  .underline{
+    width:200px;
+    border-color: var(--secondary-color);
+    height: 5px;
+  }
+
+  /* Colored text in the page */
+  .colored-text{
+    color: var(--secondary-color);
+  }
+
+  .images-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .my-circle-image{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .interests{
+    display: inline-block;
+  }
+
+  .item-interesting{
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: transform .2s; /* Animation */
+  }
+
+  .item-interesting:hover{
+    background-color: var(--secondary-color);
+    color: #111;
+    cursor: default;
+    font-weight: bold;
+    transform: scale(1.08);
+  }
+
+  .icon-subtitle-about{
+    margin-right: 6px;
+    margin-left: -16px;
+  }
+
+  .container-content-row{
+    padding-left: 24px;
+  }
+
+  table{
+    width:100%;
+  }
+
+  .overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#111;
+    opacity: 0.8;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+  .overlay-top-image {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    opacity: 0.8;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
+  .container-grid-images {
+    position: relative;
+    width: 100%;
+  }
+
+  .container-grid-images:hover .overlay-image {
+    height: 100%;
+  }
+
+  .container-grid-images:hover .overlay-top-image {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .image-grid{
+    width:100%;
+  }
+
+  .text-image{
+    color: white;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .margin-icons1{
+    font-size: 24px;
+  }
+  .margin-icons{
+    margin-inline: 7px;
+    font-size:24px;
+  }
+
+  .w3-input{
+    background: transparent;
+  }
+
+  .form_input_message{
+    resize: none;
+  }
+
+  #open_email{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .principal-text{
+    font-size: var(--principal-font-size);
+    color: var(--primary-color);
+    text-align: left;
+  }
+
+  .footer-only-phone{
+    display: none;
+  }
